@@ -5,3 +5,33 @@ lembrando que é preciso mudar no file URLS a seguinte linha
 from . import views
 path('...', views.CLASSBASEDVIEW.as_view(), name='...'),
 
+
+javascript é considerado uma static file e portanto deve ficar na pasta static
+
+
+liste util de comandos postgres:
+
+-pra acessar o comand line
+>psql
+
+-pra acessar uma database especifica com um user
+>psql -d dataclub -U tadeup
+
+-criar usuario:
+>create user tadeup with password 'unsafe' superuser;
+
+-listar os usuario
+>\du
+
+-listar as databases
+>\l
+
+-garantir privilegios aos usiarios
+>grant all on database dataclub to tadeup;
+
+-alterar privilegios
+>alter role tadeup with createdb;
+
+-link util
+https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-manage-grant-permissions-in-postgresql-on-a-vps--2
+
