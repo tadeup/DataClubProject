@@ -1,0 +1,39 @@
+app no qual é possivel colocar snippets de codigos e fazer upload de bases de dado
+o diferencial é que tudo funciona clicando em botão
+existem funcionalidades do site
+mas os usuarios podem fazer upload de codigo e votar nos melhores codigos
+
+===============
+
+site focado em alunos universitarios e que voce pode pagar pequenas quantias para realizar trabalhos pequenos
+talves da pra pensar em construir um jeito de realizar trabalhos grandes de forma distribuida?
+
+
+CREATE TABLE testData(
+    DividendStocks VARCHAR(5),
+    EmergingMarkets VARCHAR(5),
+    ForeignStocks VARCHAR(5),
+    MunicipalBonds VARCHAR(5),
+    NaturalResources VARCHAR(5),
+    RiskTolerance FLOAT8,
+    USStocks VARCHAR,
+    q1 integer,
+    q2 integer,
+    q3 integer,
+    q4 integer,
+    q5 integer,
+    q6 integer,
+    q7 integer,
+    q8 integer
+);
+
+
+
+COPY testData FROM 'C:/Users/tadeu/Desktop/FGV/GV DATA/javascript/d3_tutorials/proj001/testdata.csv' WITH (FORMAT csv)
+
+
+=====================
+
+conseguir colocar os dados numa base de dados sql
+criar uma api rest em django que feede esses dados
+conseguir importar esses dados num app vue

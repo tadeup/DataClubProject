@@ -1,0 +1,7 @@
+pra criar um class based view, é preciso inheritar de alguma coisa
+o mais generico de todos é o generic.TemplateView
+o poder do CBV é justamente poder inheritar de views que voce definiu
+lembrando que é preciso mudar no file URLS a seguinte linha
+from . import views
+path('...', views.CLASSBASEDVIEW.as_view(), name='...'),
+
