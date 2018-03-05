@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
     <title>DataClub</title>
 </head>
 <body>
     <div id="header">
-        <h1>DataClub</h1>
-        <h3>data driven aplications</h3>
-        <hr>
+        <h1 class="header-element">DataClub</h1>
+        <h3 class="header-element">DATA DRIVEN APPLICATIONS</h3>
+        <div id="navi">
+            <ul>
+                <li><a href="{% url 'home:index' %}">Home</a></li>
+                <li><a href="{% url 'home:about' %}">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li style="float:right"><a href="#">About</a></li>
+            </ul>
+        </div>
     </div>
     {% block body %}
         
